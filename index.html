@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		 <script src="application.js"></script>
+		<title>Shopping List</title>
+	</head>
+
+
+	<body>
+		<div class="container">
+			<div class="Forms">
+				<div class="login">
+					<h2>Log In</h2>
+					<input type="text" name="login" id="loginUN" placeholder="Username">
+					<input type="password" name="password" id="logInPassword" placeholder="Password">
+					<div id="loginbButtonDiv">
+						<button type="button" name="loginbutton" id="loginbutton" value="add"> 
+           					Login
+        				</button>
+        			</div>
+				</div>
+				<div class="signup">
+					<h2>Sign Up</h2>
+					<input type="text" name="login" id="signUpUN" placeholder="Username">
+					<input type="password" name="password" id="signUpPassword" placeholder="Password">
+					<div id="SignupbButtonDiv">	
+						<button type="button" name="signupbutton" id="signupbutton" value="add"> 
+           					Sign Up
+        				</button>
+        			</div>
+				</div>
+			</div>
+			<div id="banner">
+				<div id="logOutButton">
+					<!-- 
+					<button type="button" name="logout" id="logout" value="logout"> 
+           				Log Out
+        			</button>
+        			 -->
+        			 <button id="logout">Log Out Now</button>
+        		</div>
+				<div class="stuff">
+					<h1> <span id="name"></span>&rsquo;s Shopping List</h1> 
+
+					<input type="text" name="input" id="input" placeholder="What do you need?">
+					<div>
+						<button type="button" name="add" id="add" value="add"> 
+           				+
+        				</button>
+        			</div>
+        		</div>
+
+        		<div>
+					<button type="button" name="clear" id="clear" value="clear"> 
+           				Clear Checked
+        			</button>
+        		</div>
+
+			</div>
+			<ul id="list">
+				
+			</ul>
+		</div>
+	</body>
